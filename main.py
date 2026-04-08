@@ -1,9 +1,7 @@
 import requests 
 import pandas as pd
 
-# Replace "API_KEY_HERE" with actual AviationStack or other api provider key
 API_KEY = "7148fd451b829e2c3b71eeb52df6017c"
-#URL = f"http://api.aviationstack.com/v1/flights?access_key={API_KEY}&limit=10"
 URL = f"https://api.aviationstack.com/v1/flights?access_key={API_KEY}&limit=1&offset=0"
 
 #try api call
