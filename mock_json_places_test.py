@@ -2,7 +2,7 @@ import requests
 import json
 
 GOOGLE_API_KEY = ""
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = ""
 
 
 #Get restaurant data (mocked)
