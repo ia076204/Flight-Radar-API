@@ -43,8 +43,8 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/html')
         self.end_headers()
         
-        # Grab the API key from Vercel Environment Variables (Fallback to your key if not set)
-        api_key = os.environ.get("AVIATION_API_KEY", "7148fd451b829e2c3b71eeb52df6017c")
+        # Grab the API key from Vercel Environment Variables 
+        api_key = os.environ.get("AVIATION_API_KEY")
         
         # Get the HTML table
         html_table = get_latest_flights(api_key, limit=10)
