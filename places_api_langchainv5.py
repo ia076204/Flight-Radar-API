@@ -9,7 +9,7 @@ def get_restaurant_data(lat, lng):
         "location": f"{lat},{lng}",
         "radius": 1500,
         "type": "restaurant",
-        "key": "AIzaSyDITioZ6RCCzVtlnwORVzM1QmI0IWJs7VQ" #Google Key
+        "key": "" #Google Key
     }
 
     #get the json results here
@@ -40,7 +40,7 @@ def get_restaurant_data(lat, lng):
 # 3. llm setup
 llm = ChatOpenRouter(
     model="anthropic/claude-sonnet-4.6",
-    api_key="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", #OpenRouter Key
+    api_key="", #OpenRouter Key
     #headers to help prevent the 401 errors seen in your screenshots
     app_url="http://localhost:3000",
     app_title="Restaurant Summary Bot"
